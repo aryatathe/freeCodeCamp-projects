@@ -1,0 +1,207 @@
+html{
+    font-family: cursive;
+    color: #e85a4f;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #eae7dc;
+    margin: 0px;
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+li{
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+h2{
+    font-size: 48px;
+}
+#navbar{
+    width: 100%;
+    min-width: 460px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    position: fixed;
+    z-index: 2;
+    background-color: #4e4d4a;
+    display: inline-block;
+    vertical-align: center;
+}
+#navbar p{
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-right: 20px;
+    box-sizing: border-box;
+    color: #ffb7ab;
+    float: right;
+    text-align: right;
+    width: 30%;
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    float: left;
+    width: 60%;
+    height: 100%;
+    min-width: 200px;
+    justify-content: flex-end;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ffb7ab;
+    font-size: 24px;
+    font-weight: bold;
+}
+#navbar li{
+    height: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+#navbar li:hover{
+    background-color: #2e2d2a;
+    font-size: 120%;
+}
+#navbar a{
+    width: 30%;
+}
+#welcome-section{
+    width: 100%;
+    height: 100vh;
+}
+#welcome-section header{
+    position: relative;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    text-align: center;
+}
+#welcome-section header h1{
+    font-size: 96px;
+    margin-bottom: -30px;
+}
+#welcome-section header h3{
+    font-size: 28px;
+}
+#projects{
+    text-align: center;
+    background-color: #d8c3a5;
+    padding: 40px 0px 80px 0px;
+}
+#content{
+    padding: 0px 80px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-gap: 30px;
+    justify-items: center;
+}
+.project-tile{
+    height: 304px;
+    max-width: 520px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 260px 40px;
+    grid-template-columns: 100%;
+    border: solid #4e4d4a 2px;
+    background-color: #4e4d4a;
+    overflow-x: hidden;
+    vertical-align: center;
+    box-sizing: border-box;
+}
+.project-tile img{
+
+    height: 100%;
+    position: relative;
+    z-index: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+.project-tile img:hover{
+    opacity: 0.4;
+    height: 110%;
+}
+.project-tile h3{
+    margin: auto;
+    z-index: 1;
+    background-color: #4e4d4a;
+    color: #ffb7ab;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    border: solid #4e4d4a 2px;
+    box-sizing: border-box;
+}
+#contact{
+    text-align: center;
+    min-height: 200px;
+    bottom: 0px;
+    padding: 60px 40px 80px 40px;
+}
+#contact ul{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: bold;
+}
+#contact a{
+    min-width: 30%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #ffb7ab;
+    color: #4e4d4a;
+    transition: all 0.3s ease;
+}
+#contact a:hover{
+    padding: 20px 30px;
+    font-size: 120%;
+}
+
+@media (max-width: 750px){
+    #navbar{
+        height: 180px;
+    }
+    #navbar ul{
+        flex-direction: column;
+        justify-content: space-around;
+        min-width: 120px;
+    }
+    #navbar ul li{
+        height: 60px;
+    }
+    #navbar a{
+        width: 100%;
+    }
+    #contact ul{
+        flex-direction: column;
+        height: 300px;
+        min-width: 400px;
+    }
+}

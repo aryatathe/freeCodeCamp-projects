@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Let us know how we can improve this page</p>
+        </header>
+        <form id="survey-form">
+            <label for="name" id="name-label">Enter Name:</label>
+            <input type="text" placeholder="Name" id="name" required>
+            <label for="email" id="email-label">Enter Email ID:</label>
+            <input type="email" placeholder="E-mail ID" id="email" required>
+            <label for="number" id="number-label">Enter Phone Number (optional):</label>
+            <input type="number" placeholder="Number" id="number" min="0" max="9999999999">
+            <label for="selection" id="selection">Which option best describes your current role?</label>
+            <select id="dropdown">
+                <option disabled selected>Select Current Role</option>
+                <option>Student</option>
+                <option>Full Time Job</option>
+                <option>Other</option>
+                <option>Prefer not to say</option>
+            </select>
+            <label for="quality">How do you think this site is?</label>
+            <section>
+                <label for="great"><input type="radio" name="quality" id="great" value="great"> Great!</label><br>
+                <label for="good"><input type="radio" name="quality" id="good" value="good"> Pretty Good</label><br>
+                <label foor="bad"><input type="radio" name="quality" id="bad" value="bad"> Needs more work</label>
+            </section>
+            <label>What portions do you think require improvement?</label>
+            <section for="improv">
+                <label for="html"><input type="checkbox" name="improv" id="html" value="html"> HTML code</label><br>
+                <label for="css"><input type="checkbox" name="improv" id="css" value="css"> CSS styling</label><br>
+                <label for="fend"><input type="checkbox" name="improv" id="fend" value="fend"> Front-End Libraries</label><br>
+                <label for="pyt"><input type="checkbox" name="improv" id="pyt" value="pyt"> Python code</label><br>
+                <label for="access"><input type="checkbox" name="improv" id="access" value="access"> Accessibility</label><br>
+                <label for="aesthetic"><input type="checkbox" name="improv" id="aesthetic" value="aesthetic"> Aesthetics</label>
+            </section>
+            <label for="comments">Any comments or suggestions?</label>
+            <textarea maxlength="300" id="comments" rows="5" required>Enter your comments here....</textarea>
+            <div id="submit-button">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </body>
+</html>

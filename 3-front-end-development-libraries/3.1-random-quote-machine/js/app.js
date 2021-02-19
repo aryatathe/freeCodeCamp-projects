@@ -455,4 +455,4 @@ class Main extends React.Component{
     }
 };
 
-ReactDOM.render(<App />, domContainer)
+ReactDOM.render(<Main />, domContainer)

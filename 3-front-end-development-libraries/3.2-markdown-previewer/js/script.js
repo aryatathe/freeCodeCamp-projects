@@ -50,11 +50,6 @@ const cssClasses={
     icon:["fa fa-expand fa-2x","fa fa-compress fa-2x"]
 }
 
-marked.setOptions({
-  breaks: true
-});
-
-
 class Main extends React.Component {
     constructor(props){
         super(props);

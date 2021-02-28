@@ -68,12 +68,11 @@ class Buttons extends React.Component {
             this.setState({
                 input: this.props.output2,
                 equalFlag: 0
-            },()=>{console.log(this.state.input); this.operatorPress(x)});
+            },()=>{this.operatorPress(x)});
             return;
         }
         if(/[+/*]/.test(x)==true){
             if(this.state.input==''){
-                console.log('test'+this.state.input+'untest');
                 return;
             }
             else if(/[+-/*]-$/.test(this.state.input)==true){
@@ -132,7 +131,7 @@ class Buttons extends React.Component {
             input: '',
             tempDisp: '',
             equalFlag: 1
-        },()=>{console.log(this.state.input)});
+        });
         this.props.equals();
     }
 
@@ -193,19 +192,19 @@ class Main extends React.Component {
         this.disp2Change(z);
         this.setState({
             disp1: this.state.disp1+'='+z
-        },()=>{console.log(this.state.disp1)});
+        });
     }
 
     disp1Change(x){
         this.setState({
             disp1: x==''?'0':x
-        },()=>{console.log(this.state.disp1)});
+        });
     }
 
     disp2Change(x){
         this.setState({
             disp2: x==''?'0':x
-        },()=>{console.log(this.state.disp2)});
+        });
     }
 
     render() {

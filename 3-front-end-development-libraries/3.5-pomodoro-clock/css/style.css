@@ -1,0 +1,91 @@
+html {
+	 font-family: sans-serif;
+}
+ body {
+	 height: 100vh;
+	 width: 100vw;
+	 margin: 0px;
+	 padding: 10px;
+	 box-sizing: border-box;
+	 background-color: #bab2b5;
+}
+ button {
+	 border: 0;
+	 padding: 0;
+	 background-color: inherit;
+}
+ button:focus {
+	 outline: 0;
+}
+ i {
+	 color: #123c69;
+	 transition: all 0.1s ease;
+}
+ i:hover {
+	 color: #729cc9;
+}
+ #root {
+	 height: 100%;
+	 width: auto;
+}
+ #clock {
+	 display: inline-block;
+	 position: relative;
+	 max-width: 900px;
+	 top: 50%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+	 background-color: #eee2dc;
+	 border-bottom: solid #123c69 60px;
+	 border-radius: 40px;
+	 box-sizing: border-box;
+	 text-align: center;
+	 display: grid;
+	 grid-template-rows: auto 1fr;
+	 grid-template-columns: 1fr 3fr 1fr;
+}
+ #heading {
+	 grid-area: 1/1/2/4;
+	 margin: 0;
+	 background-color: #123c69;
+	 border-radius: 40px 40px 0px 0px;
+	 padding: 20px;
+	 font-size: 36px;
+	 color: #eee2dc;
+}
+ #display {
+	 grid-area: 2/2/3/3;
+	 background-color: #edc7b7;
+	 padding: 20px;
+	 border-radius: 40px;
+	 color: #ac3b61;
+}
+ #display button {
+	 margin: 0px 15%;
+}
+ #timer-label {
+	 font-size: 32px;
+	 margin: 0px;
+}
+ #time-left {
+	 font-size: 108px;
+	 margin: 40px 0px;
+}
+ .controls {
+	 background-color: #eee2dc;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+	 align-items: center;
+	 padding: 20px;
+	 color: #7a7275;
+}
+ .controls h3 {
+	 font-size: 24px;
+	 margin-bottom: 30px;
+}
+ .controls h4 {
+	 font-size: 32px;
+	 margin: 10px 0px;
+}
+ 

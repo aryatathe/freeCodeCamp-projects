@@ -1,7 +1,7 @@
 # freeCodeCamp-Projects
 My projects as part of the [freecodecamp.org](https://www.freecodecamp.org/) web development bootcamp's coursework.
 
-## 1. Responsive Web Design
+## 1. Responsive Web Design [(Certification)](https://www.freecodecamp.org/certification/excalibur1702/responsive-web-design)
 
 | Project | Solution on Github | Solution on CodePen |
 | :--- | :---: | :---: |
@@ -11,7 +11,7 @@ My projects as part of the [freecodecamp.org](https://www.freecodecamp.org/) web
 | Technical Documentation Page | [Github Link](https://excalibur1702.github.io/freeCodeCamp-projects/1-responsive-web-design/1.4-technical-documentation-page/) | [Codepen Link](https://codepen.io/excalibur1702/pen/NWbrjvz) |
 | Personal Portfolio Webpage | [Github Link](https://excalibur1702.github.io/freeCodeCamp-projects/1-responsive-web-design/1.5-personal-portfolio-webpage/) | [Codepen Link](https://codepen.io/excalibur1702/pen/gOLMypV) |
 
-## 2. JavaScript Algorithms and Data Structures
+## 2. JavaScript Algorithms and Data Structures [(Certification)](https://www.freecodecamp.org/certification/excalibur1702/javascript-algorithms-and-data-structures)
 
 | Project | Solution |
 | :--- | :---: |
@@ -21,7 +21,7 @@ My projects as part of the [freecodecamp.org](https://www.freecodecamp.org/) web
 | Telephone Number Validator | [Source Code](https://excalibur1702.github.io/freeCodeCamp-projects/2-javaScript-algorithms-and-data-structures/2.4-telephone-number-validator.js) |
 | Cash Register | [Source Code](https://excalibur1702.github.io/freeCodeCamp-projects/2-javaScript-algorithms-and-data-structures/2.5-cash-register.js) |
 
-## 3. Front End Development Libraries
+## 3. Front End Development Libraries [(Certification)](https://www.freecodecamp.org/certification/excalibur1702/front-end-libraries)
 
 | Project | Solution on Github | Solution on CodePen |
 | :--- | :---: | :---: |
